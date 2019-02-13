@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-
-//import "./App.css";
+import "./App.scss";
 import NavBar from "./components/Navigation/NavBar/NavBar";
+import Banner from "./components/UI/Banner/Banner";
+import TextDescription from "./containers/Info/TextDescription/TextDescription";
+import ServiceItems from "./components/UI/ServiceItems/ServiceItems";
 
 class App extends Component {
   render() {
@@ -9,8 +11,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <NavBar />
-          <br />
-          <p />
+          <Banner />
+          <TextDescription />
+          <ServiceItems />
         </header>
       </div>
     );

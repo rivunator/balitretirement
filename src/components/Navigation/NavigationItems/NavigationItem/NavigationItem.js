@@ -1,11 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import classes from "./NavigationItem.css";
+//import { NavLink } from "react-router-dom";
+import "./NavigationItem.scss";
 
 const navigationItem = props => (
-  <NavLink to="/" activeClassName="is-active">
-    {props.title}
-  </NavLink>
+  <a href="/" className={props.active ? "active" : null}>
+    {props.title}{" "}
+  </a>
 );
+//<NavLink to="/">{props.title}</NavLink>;
 
 export default navigationItem;
