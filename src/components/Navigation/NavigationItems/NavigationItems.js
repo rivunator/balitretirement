@@ -7,8 +7,8 @@ const navigationItems = () => (
   <BrowserRouter>
     <div className="menu" style={classes}>
       <NavigationItem title="Home" active />
-      <NavigationItem title="About" />
-      <NavigationItem title="Price" />
+      <NavigationItem title="Cost of living" />
+      <NavigationItem title="How to apply" />
       <NavigationItem title="Contact" />
     </div>
   </BrowserRouter>

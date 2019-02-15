@@ -3,7 +3,8 @@ import "./App.scss";
 import NavBar from "./components/Navigation/NavBar/NavBar";
 import Banner from "./components/UI/Banner/Banner";
 import TextDescription from "./containers/Info/TextDescription/TextDescription";
-import ServiceItems from "./components/UI/ServiceItems/ServiceItems";
+import Services from "./containers/Services/Services";
+import Footer from "./components/UI/Footer/Footer";
 
 class App extends Component {
   render() {
@@ -12,9 +13,10 @@ class App extends Component {
         <header className="App-header">
           <NavBar />
           <Banner />
-          <TextDescription />
-          <ServiceItems />
         </header>
+        <TextDescription />
+        <Services />
+        <Footer />
       </div>
     );
   }
